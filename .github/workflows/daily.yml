@@ -1,0 +1,79 @@
+# ============================================
+# GameNews — Ежедневная генерация подкастов
+# Запуск: каждый день в 06:00 UTC (09:00 MSK)
+# 
+# Что делает:
+# 1. Собирает новости из игровых RSS-источников
+# 2. Озвучивает через gTTS
+# 3. Публикует на GitHub Pages
+# ============================================
+
+name: Daily GameNews Podcast
+
+on:
+  schedule:
+    # 06:00 UTC = 09:00 MSK
+    - cron: '0 6 * * *'
+  
+  # Ручной запуск (для тестов)
+  workflow_dispatch:
+
+# Разрешения для публикации на GitHub Pages
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  generate-podcasts:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Клонируем репозиторий
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Устанавливаем Python
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Устанавливаем зависимости
+      - name: 📦 Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install feedparser gTTS
+
+      # 4. Собираем новости из RSS
+      - name: 📡 Parse RSS feeds
+        run: |
+          echo "=== Сбор игровых новостей ==="
+          python scripts/rss_parser.py
+
+      # 5. Озвучиваем подкасты
+      - name: 🎙️ Generate audio (TTS)
+        run: |
+          echo "=== Генерация аудио ==="
+          python scripts/generate_podcast.py
+
+      # 6. Проверяем результаты
+      - name: ✅ Check results
+        run: |
+          echo "=== Проверка файлов ==="
+          echo "podcasts.json:"
+          cat podcasts.json | python -m json.tool | head -30
+          echo ""
+          echo "Аудиофайлы:"
+          ls -la audio/ 2>/dev/null || echo "Папка audio/ пуста"
+          echo ""
+          echo "Текстовые файлы:"
+          ls -la texts/ 2>/dev/null || echo "Папка texts/ пуста"
+
+      # 7. Публикуем изменения
+      - name: 🚀 Commit and push
+        run: |
+          git config user.name "GameNews Bot"
+          git config user.email "bot@gamenews.local"
+          git add -A
+          git diff --staged --quiet || git commit -m "🎮 Подкасты обновлены: $(date +'%d.%m.%Y %H:%M')"
+          git push
