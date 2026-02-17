@@ -1,3 +1,0 @@
-# GameNews — Python зависимости
-feedparser>=6.0.0
-gTTS>=2.3.0
