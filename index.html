@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameNews — Игровые подкасты</title>
+    <meta name="description" content="Ежедневные подкасты об игровой индустрии: турниры, релизы, обзоры">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           GameNews — CSS Стили
+           Чёрно-белая тема, игровой дизайн
+           ============================================ */
+
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --gray-100: #f5f5f5;
+            --gray-200: #e0e0e0;
+            --gray-300: #b0b0b0;
+            --gray-400: #808080;
+            --gray-500: #606060;
+            --gray-600: #404040;
+            --gray-700: #2a2a2a;
+            --gray-800: #1a1a1a;
+            --gray-900: #0d0d0d;
+
+            --bg-primary: var(--black);
+            --bg-secondary: var(--gray-900);
+            --bg-card: var(--gray-800);
+            --bg-card-hover: var(--gray-700);
+            --text-primary: var(--white);
+            --text-secondary: var(--gray-300);
+            --text-muted: var(--gray-400);
+            --border-color: var(--gray-700);
+            --accent: var(--white);
+
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Source Sans 3', sans-serif;
+            --radius: 4px;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 0.75rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+        }
+
+        /* === RESET === */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === Фон: надписи GameNews вперемешку === */
+        body::before {
+            content: 'GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS GAMENEWS ';
+            position: fixed;
+            top: 0; left: 0;
+            width: 200%; height: 200%;
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 6px;
+            line-height: 2.8;
+            word-spacing: 20px;
+            color: var(--gray-800);
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 0;
+            word-break: break-all;
+            overflow: hidden;
+            transform: rotate(-8deg);
+            transform-origin: center center;
+        }
+
+        /* === HEADER === */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(0,0,0,0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--gray-800);
+        }
+
+        .header__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-md) var(--spacing-lg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        .logo__img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .logo__text {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .logo__text span {
+            color: var(--gray-400);
+            font-weight: 400;
+        }
+
+        .header__ai-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: var(--spacing-xs) var(--spacing-md);
+            background: var(--white);
+            color: var(--black);
+            border: none;
+            border-radius: var(--radius);
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .header__ai-btn:hover {
+            background: var(--gray-200);
+            transform: translateY(-1px);
+        }
+
+        /* === MAIN === */
+        .main {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+        }
+
+        .section__title {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section__title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--white);
+        }
+
+        /* === ФИЛЬТРЫ === */
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .filter-btn {
+            padding: var(--spacing-xs) var(--spacing-md);
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--gray-600);
+            border-radius: var(--radius);
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--white);
+            color: var(--white);
+        }
+
+        .filter-btn.active {
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--white);
+        }
+
+        /* === КАРТОЧКИ ПОДКАСТОВ === */
+        .podcasts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .podcast-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            animation: fadeIn 0.4s ease forwards;
+            opacity: 0;
+        }
+
+        .podcast-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--gray-500);
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .card__image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .podcast-card:hover .card__image {
+            filter: grayscale(60%);
+        }
+
+        .card__body {
+            padding: var(--spacing-md);
+        }
+
+        .card__category {
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gray-400);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .card__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+            margin-bottom: var(--spacing-xs);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card__date {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .card__play-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: var(--spacing-sm);
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--white);
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .podcast-card:hover .card__play-icon {
+            opacity: 1;
+        }
+
+        /* === АУДИОПЛЕЕР === */
+        .player {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            background: rgba(13,13,13,0.98);
+            backdrop-filter: blur(16px);
+            border-top: 1px solid var(--gray-800);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            display: none;
+        }
+
+        .player.active {
+            display: block;
+        }
+
+        .player__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .player__info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .player__title {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .player__category {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .player__controls {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .player__btn {
+            background: none;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            transition: opacity 0.2s;
+        }
+
+        .player__btn:hover {
+            opacity: 0.7;
+        }
+
+        .player__btn--main {
+            width: 44px;
+            height: 44px;
+            background: var(--white);
+            color: var(--black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .player__btn--main:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .player__progress {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .player__progress-bar {
+            flex: 1;
+            height: 4px;
+            background: var(--gray-700);
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .player__progress-fill {
+            height: 100%;
+            background: var(--white);
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        .player__time {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+            min-width: 40px;
+        }
+
+        .player__close {
+            background: none;
+            border: none;
+            color: var(--gray-400);
+            cursor: pointer;
+            padding: 6px;
+            transition: color 0.2s;
+        }
+
+        .player__close:hover {
+            color: var(--white);
+        }
+
+        /* === AI ЧАТ === */
+        .ai-chat {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 380px;
+            height: 480px;
+            background: var(--gray-900);
+            border: 1px solid var(--gray-700);
+            border-radius: 8px;
+            z-index: 300;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .ai-chat.open {
+            display: flex;
+        }
+
+        .ai-chat__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--gray-700);
+            background: var(--gray-800);
+        }
+
+        .ai-chat__header-title {
+            font-family: var(--font-display);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .ai-chat__close {
+            background: none;
+            border: none;
+            color: var(--gray-400);
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .ai-chat__close:hover {
+            color: var(--white);
+        }
+
+        .ai-chat__messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: var(--spacing-md);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+
+        .ai-chat__message {
+            max-width: 85%;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .ai-chat__message--bot {
+            align-self: flex-start;
+            background: var(--gray-800);
+            border: 1px solid var(--gray-700);
+        }
+
+        .ai-chat__message--user {
+            align-self: flex-end;
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .ai-chat__input-area {
+            display: flex;
+            padding: var(--spacing-sm);
+            border-top: 1px solid var(--gray-700);
+            gap: var(--spacing-xs);
+        }
+
+        .ai-chat__input {
+            flex: 1;
+            padding: var(--spacing-sm);
+            background: var(--gray-800);
+            border: 1px solid var(--gray-600);
+            border-radius: var(--radius);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .ai-chat__input::placeholder {
+            color: var(--gray-500);
+        }
+
+        .ai-chat__input:focus {
+            border-color: var(--white);
+        }
+
+        .ai-chat__send {
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: var(--white);
+            color: var(--black);
+            border: none;
+            border-radius: var(--radius);
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .ai-chat__send:hover {
+            opacity: 0.85;
+        }
+
+        /* === NO RESULTS === */
+        .no-results {
+            text-align: center;
+            padding: var(--spacing-2xl);
+            color: var(--text-muted);
+            display: none;
+        }
+
+        .no-results.visible {
+            display: block;
+        }
+
+        .no-results__icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-md);
+            filter: grayscale(100%);
+        }
+
+        /* === FOOTER === */
+        .footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: var(--spacing-xl);
+            border-top: 1px solid var(--gray-800);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        /* === МОБИЛЬНАЯ АДАПТАЦИЯ === */
+        @media (max-width: 768px) {
+            .header__container {
+                padding: var(--spacing-sm) var(--spacing-md);
+            }
+
+            .logo__text {
+                font-size: 1.2rem;
+            }
+
+            .header__ai-btn span {
+                display: none;
+            }
+
+            .section__title {
+                font-size: 1.4rem;
+            }
+
+            .podcasts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .player__container {
+                flex-wrap: wrap;
+            }
+
+            .player__progress {
+                order: 3;
+                flex-basis: 100%;
+            }
+
+            .ai-chat {
+                bottom: 70px;
+                right: 10px;
+                left: 10px;
+                width: auto;
+                height: 55vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+
+            .podcasts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filters {
+                gap: 6px;
+            }
+
+            .filter-btn {
+                font-size: 0.75rem;
+                padding: 6px 10px;
+            }
+        }
+
+        /* === Скроллбар === */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gray-600);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="GameNews" class="logo__img">
+                <div class="logo__text">GAME<span>NEWS</span></div>
+            </a>
+            <button class="header__ai-btn" id="openAiChat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                    <line x1="9" y1="9" x2="9.01" y2="9"/>
+                    <line x1="15" y1="9" x2="15.01" y2="9"/>
+                </svg>
+                <span>AI Подкаст</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main">
+        <h2 class="section__title">Выпуски</h2>
+
+        <!-- Фильтры по категориям -->
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-category="all">Все</button>
+            <button class="filter-btn" data-category="Турниры">Турниры</button>
+            <button class="filter-btn" data-category="Релизы">Релизы</button>
+            <button class="filter-btn" data-category="Обзоры">Обзоры</button>
+        </div>
+
+        <!-- Сетка подкастов -->
+        <div class="podcasts-grid" id="podcastsGrid"></div>
+
+        <!-- Заглушка если нет контента -->
+        <div class="no-results" id="noResults">
+            <div class="no-results__icon">🎮</div>
+            <p>Нет подкастов в этой категории</p>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        GameNews © 2025 — Ежедневные игровые подкасты
+    </footer>
+
+    <!-- ========== АУДИОПЛЕЕР ========== -->
+    <div class="player" id="player">
+        <div class="player__container">
+            <div class="player__info">
+                <div class="player__title" id="playerTitle">—</div>
+                <div class="player__category" id="playerCategory">—</div>
+            </div>
+            <div class="player__controls">
+                <!-- Назад 15сек -->
+                <button class="player__btn" id="playerBack" title="−15 сек">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/><text x="12" y="16" text-anchor="middle" fill="currentColor" stroke="none" font-size="8" font-weight="bold">15</text></svg>
+                </button>
+                <!-- Play/Pause -->
+                <button class="player__btn player__btn--main" id="playerPlayPause" title="Играть">
+                    <svg id="iconPlay" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
+                    <svg id="iconPause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="5" y="3" width="5" height="18"/><rect x="14" y="3" width="5" height="18"/></svg>
+                </button>
+                <!-- Вперёд 15сек -->
+                <button class="player__btn" id="playerForward" title="+15 сек">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.13-9.36L23 10"/><text x="12" y="16" text-anchor="middle" fill="currentColor" stroke="none" font-size="8" font-weight="bold">15</text></svg>
+                </button>
+            </div>
+            <!-- Прогресс-бар -->
+            <div class="player__progress">
+                <span class="player__time" id="playerCurrent">0:00</span>
+                <div class="player__progress-bar" id="playerProgressBar">
+                    <div class="player__progress-fill" id="playerProgressFill"></div>
+                </div>
+                <span class="player__time" id="playerDuration">0:00</span>
+            </div>
+            <!-- Закрыть плеер -->
+            <button class="player__close" id="playerClose" title="Закрыть">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- ========== AI ЧАТ ========== -->
+    <div class="ai-chat" id="aiChat">
+        <div class="ai-chat__header">
+            <div class="ai-chat__header-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                AI Ассистент
+            </div>
+            <button class="ai-chat__close" id="closeAiChat">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="ai-chat__messages" id="chatMessages">
+            <div class="ai-chat__message ai-chat__message--bot">
+                Привет! 🎮 Напиши тему — найду подкаст по играм.
+            </div>
+        </div>
+        <div class="ai-chat__input-area">
+            <input type="text" class="ai-chat__input" id="chatInput" placeholder="Например: новости про GTA VI..." />
+            <button class="ai-chat__send" id="chatSend">→</button>
+        </div>
+    </div>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        /**
+         * GameNews — Клиентский JavaScript
+         * Загрузка подкастов, плеер, фильтры, AI-чат
+         */
+
+        // === ДАННЫЕ ПОДКАСТОВ ===
+        // Загружаем из JSON-файла, сгенерированного скриптами
+        let allPodcasts = [];
+        let currentAudio = null;
+        let isPlaying = false;
+
+        // === DOM-ЭЛЕМЕНТЫ ===
+        const podcastsGrid = document.getElementById('podcastsGrid');
+        const noResults = document.getElementById('noResults');
+        const filtersContainer = document.getElementById('filters');
+        const player = document.getElementById('player');
+        const playerTitle = document.getElementById('playerTitle');
+        const playerCategory = document.getElementById('playerCategory');
+        const playerPlayPause = document.getElementById('playerPlayPause');
+        const playerProgressBar = document.getElementById('playerProgressBar');
+        const playerProgressFill = document.getElementById('playerProgressFill');
+        const playerCurrent = document.getElementById('playerCurrent');
+        const playerDuration = document.getElementById('playerDuration');
+        const iconPlay = document.getElementById('iconPlay');
+        const iconPause = document.getElementById('iconPause');
+
+        /**
+         * Загрузка подкастов из JSON
+         */
+        async function loadPodcasts() {
+            try {
+                const response = await fetch('podcasts.json');
+                if (!response.ok) throw new Error('Файл не найден');
+                allPodcasts = await response.json();
+                console.log(`[GameNews] Загружено ${allPodcasts.length} подкастов`);
+                renderPodcasts(allPodcasts);
+            } catch (error) {
+                console.warn('[GameNews] podcasts.json не найден, показываем демо-данные');
+                loadDemoPodcasts();
+            }
+        }
+
+        /**
+         * Демо-данные при отсутствии JSON
+         */
+        function loadDemoPodcasts() {
+            allPodcasts = [
+                {
+                    id: 1,
+                    title: "GTA VI: дата выхода, геймплей и всё что известно",
+                    category: "Релизы",
+                    date: "2025-02-17",
+                    image: "",
+                    audio: "",
+                    description: "Обзор всей известной информации о GTA VI от Rockstar Games"
+                },
+                {
+                    id: 2,
+                    title: "BLAST Major: результаты финалов CS2",
+                    category: "Турниры",
+                    date: "2025-02-17",
+                    image: "",
+                    audio: "",
+                    description: "Итоги крупнейшего турнира по Counter-Strike 2"
+                },
+                {
+                    id: 3,
+                    title: "The Witcher IV — первые впечатления от геймплея",
+                    category: "Обзоры",
+                    date: "2025-02-17",
+                    image: "",
+                    audio: "",
+                    description: "Подробный разбор показанного геймплея The Witcher IV"
+                },
+                {
+                    id: 4,
+                    title: "Dota 2: The International 2025 — анонс",
+                    category: "Турниры",
+                    date: "2025-02-16",
+                    image: "",
+                    audio: "",
+                    description: "Valve объявила даты и место проведения TI 2025"
+                },
+                {
+                    id: 5,
+                    title: "DOOM: The Dark Ages — обзор и оценки прессы",
+                    category: "Обзоры",
+                    date: "2025-02-16",
+                    image: "",
+                    audio: "",
+                    description: "Что пишут журналисты о новом DOOM"
+                },
+                {
+                    id: 6,
+                    title: "Death Stranding 2 вышла на PS5",
+                    category: "Релизы",
+                    date: "2025-02-16",
+                    image: "",
+                    audio: "",
+                    description: "Релиз новой игры Хидео Кодзимы"
+                }
+            ];
+            renderPodcasts(allPodcasts);
+        }
+
+        /**
+         * Отрисовка карточек подкастов
+         * @param {Array} podcasts — массив подкастов для отображения
+         */
+        function renderPodcasts(podcasts) {
+            podcastsGrid.innerHTML = '';
+            noResults.classList.toggle('visible', podcasts.length === 0);
+
+            podcasts.forEach((podcast, index) => {
+                const card = document.createElement('div');
+                card.className = 'podcast-card';
+                card.style.animationDelay = `${index * 0.08}s`;
+                card.dataset.id = podcast.id;
+
+                // Плейсхолдер картинки — SVG заглушка
+                const imgSrc = podcast.image || `data:image/svg+xml,${encodeURIComponent(
+                    `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225">
+                        <rect fill="#1a1a1a" width="400" height="225"/>
+                        <text x="200" y="105" text-anchor="middle" fill="#404040" font-family="monospace" font-size="40">🎮</text>
+                        <text x="200" y="140" text-anchor="middle" fill="#333" font-family="sans-serif" font-size="12">GAMENEWS</text>
+                    </svg>`
+                )}`;
+
+                card.innerHTML = `
+                    <img class="card__image" src="${imgSrc}" alt="${podcast.title}" loading="lazy"
+                         onerror="this.src='data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='400' height='225'><rect fill='%231a1a1a' width='400' height='225'/><text x='200' y='112' text-anchor='middle' fill='%23333' font-size='40'>🎮</text></svg>`)}'">
+                    <div class="card__body">
+                        <div class="card__category">${podcast.category}</div>
+                        <div class="card__title">${podcast.title}</div>
+                        <div class="card__date">${formatDate(podcast.date)}</div>
+                        <div class="card__play-icon">▶ СЛУШАТЬ</div>
+                    </div>
+                `;
+
+                // Клик по карточке — запуск аудио
+                card.addEventListener('click', () => playPodcast(podcast));
+                podcastsGrid.appendChild(card);
+            });
+        }
+
+        /**
+         * Форматирование даты
+         * @param {string} dateStr — дата в формате YYYY-MM-DD
+         * @returns {string} — читаемая дата
+         */
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const months = ['января','февраля','марта','апреля','мая','июня',
+                           'июля','августа','сентября','октября','ноября','декабря'];
+            const d = new Date(dateStr);
+            return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+        }
+
+        // === ФИЛЬТРАЦИЯ ===
+        filtersContainer.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('filter-btn')) return;
+
+            // Обновляем активную кнопку
+            filtersContainer.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+
+            const category = e.target.dataset.category;
+            const filtered = category === 'all'
+                ? allPodcasts
+                : allPodcasts.filter(p => p.category === category);
+
+            renderPodcasts(filtered);
+            console.log(`[GameNews] Фильтр: ${category}, найдено: ${filtered.length}`);
+        });
+
+        // === АУДИОПЛЕЕР ===
+
+        /**
+         * Запуск подкаста
+         * @param {Object} podcast — объект подкаста
+         */
+        function playPodcast(podcast) {
+            if (!podcast.audio) {
+                console.warn('[GameNews] Аудио отсутствует для:', podcast.title);
+                return;
+            }
+
+            // Если играет другой трек — останавливаем
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio = null;
+            }
+
+            currentAudio = new Audio(podcast.audio);
+            playerTitle.textContent = podcast.title;
+            playerCategory.textContent = podcast.category;
+            player.classList.add('active');
+
+            currentAudio.play().then(() => {
+                isPlaying = true;
+                updatePlayPauseIcon();
+                console.log(`[GameNews] Играет: ${podcast.title}`);
+            }).catch(err => {
+                console.error('[GameNews] Ошибка воспроизведения:', err);
+            });
+
+            // Обновление прогресса
+            currentAudio.addEventListener('timeupdate', updateProgress);
+            currentAudio.addEventListener('loadedmetadata', () => {
+                playerDuration.textContent = formatTime(currentAudio.duration);
+            });
+            currentAudio.addEventListener('ended', () => {
+                isPlaying = false;
+                updatePlayPauseIcon();
+            });
+        }
+
+        // Play/Pause
+        playerPlayPause.addEventListener('click', () => {
+            if (!currentAudio) return;
+            if (isPlaying) {
+                currentAudio.pause();
+            } else {
+                currentAudio.play();
+            }
+            isPlaying = !isPlaying;
+            updatePlayPauseIcon();
+        });
+
+        // Назад 15 сек
+        document.getElementById('playerBack').addEventListener('click', () => {
+            if (currentAudio) currentAudio.currentTime = Math.max(0, currentAudio.currentTime - 15);
+        });
+
+        // Вперёд 15 сек
+        document.getElementById('playerForward').addEventListener('click', () => {
+            if (currentAudio) currentAudio.currentTime = Math.min(currentAudio.duration, currentAudio.currentTime + 15);
+        });
+
+        // Клик по прогресс-бару
+        playerProgressBar.addEventListener('click', (e) => {
+            if (!currentAudio) return;
+            const rect = playerProgressBar.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            currentAudio.currentTime = pos * currentAudio.duration;
+        });
+
+        // Закрыть плеер
+        document.getElementById('playerClose').addEventListener('click', () => {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio = null;
+            }
+            isPlaying = false;
+            player.classList.remove('active');
+        });
+
+        /**
+         * Обновление прогресс-бара
+         */
+        function updateProgress() {
+            if (!currentAudio || !currentAudio.duration) return;
+            const pct = (currentAudio.currentTime / currentAudio.duration) * 100;
+            playerProgressFill.style.width = pct + '%';
+            playerCurrent.textContent = formatTime(currentAudio.currentTime);
+        }
+
+        /**
+         * Обновление иконки Play/Pause
+         */
+        function updatePlayPauseIcon() {
+            iconPlay.style.display = isPlaying ? 'none' : 'block';
+            iconPause.style.display = isPlaying ? 'block' : 'none';
+        }
+
+        /**
+         * Форматирование времени в mm:ss
+         * @param {number} sec — секунды
+         * @returns {string}
+         */
+        function formatTime(sec) {
+            if (!sec || isNaN(sec)) return '0:00';
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60);
+            return `${m}:${s < 10 ? '0' : ''}${s}`;
+        }
+
+        // === AI ЧАТ ===
+        const aiChat = document.getElementById('aiChat');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+
+        document.getElementById('openAiChat').addEventListener('click', () => {
+            aiChat.classList.toggle('open');
+        });
+
+        document.getElementById('closeAiChat').addEventListener('click', () => {
+            aiChat.classList.remove('open');
+        });
+
+        document.getElementById('chatSend').addEventListener('click', sendChatMessage);
+        chatInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') sendChatMessage();
+        });
+
+        /**
+         * Отправка сообщения в AI-чат
+         * Ищет подкасты по ключевым словам пользователя
+         */
+        function sendChatMessage() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+
+            // Показываем сообщение пользователя
+            addChatMessage(text, 'user');
+            chatInput.value = '';
+
+            // Простой поиск по заголовкам и описаниям
+            const query = text.toLowerCase();
+            const found = allPodcasts.filter(p =>
+                p.title.toLowerCase().includes(query) ||
+                (p.description && p.description.toLowerCase().includes(query)) ||
+                p.category.toLowerCase().includes(query)
+            );
+
+            setTimeout(() => {
+                if (found.length > 0) {
+                    let response = `Нашёл ${found.length} подкаст(ов) по "${text}":\n\n`;
+                    found.slice(0, 3).forEach(p => {
+                        response += `🎮 ${p.title} (${p.category})\n`;
+                    });
+                    response += '\nНажми на карточку чтобы послушать!';
+                    addChatMessage(response, 'bot');
+
+                    // Применяем фильтр — показываем найденные
+                    renderPodcasts(found);
+                } else {
+                    addChatMessage(`Не нашёл подкастов по "${text}". Попробуй другие ключевые слова!`, 'bot');
+                }
+            }, 500);
+        }
+
+        /**
+         * Добавление сообщения в чат
+         * @param {string} text — текст сообщения
+         * @param {string} type — 'user' или 'bot'
+         */
+        function addChatMessage(text, type) {
+            const msg = document.createElement('div');
+            msg.className = `ai-chat__message ai-chat__message--${type}`;
+            msg.textContent = text;
+            chatMessages.appendChild(msg);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // === ИНИЦИАЛИЗАЦИЯ ===
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('[GameNews] Инициализация...');
+            loadPodcasts();
+        });
+    </script>
+</body>
+</html>
