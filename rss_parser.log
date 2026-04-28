@@ -2298,3 +2298,36 @@ Moved Temporarily
 2026-04-27 08:20:30,943 [INFO] Сохранено в /home/runner/work/GameNews/GameNews/podcasts.json
 2026-04-27 08:20:30,943 [INFO] Тексты для озвучки сохранены в /home/runner/work/GameNews/GameNews/texts/
 2026-04-27 08:20:30,943 [INFO] Готово!
+2026-04-28 08:22:02,045 [INFO] ==================================================
+2026-04-28 08:22:02,045 [INFO] GameNews RSS — Начало сбора новостей
+2026-04-28 08:22:02,045 [INFO] ==================================================
+2026-04-28 08:22:02,045 [INFO] 
+--- Категория: Турниры ---
+2026-04-28 08:22:02,045 [INFO] Загружаю RSS: Cyber.Sports.ru (https://cyber.sports.ru/rss/main.xml)
+2026-04-28 08:22:05,546 [WARNING] Ошибка парсинга Cyber.Sports.ru: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Moved Temporarily
+2026-04-28 08:22:05,546 [INFO] Загружаю RSS: GoHa.ru - Киберспорт (https://www.goha.ru/rss/:Киберспорт)
+2026-04-28 08:22:05,860 [WARNING] Ошибка парсинга GoHa.ru - Киберспорт: <unknown>:2:1326: not well-formed (invalid token)
+2026-04-28 08:22:05,860 [INFO]   Итого Турниры: 0 новостей
+2026-04-28 08:22:05,860 [INFO] 
+--- Категория: Релизы ---
+2026-04-28 08:22:05,860 [INFO] Загружаю RSS: StopGame - Новости (https://rss.stopgame.ru/rss_news.xml)
+2026-04-28 08:22:06,758 [INFO]   → StopGame - Новости: получено 10 новостей
+2026-04-28 08:22:06,758 [INFO] Загружаю RSS: GoHa.ru - Общее (https://www.goha.ru/rss/)
+2026-04-28 08:22:06,861 [WARNING] Ошибка парсинга GoHa.ru - Общее: <unknown>:2:1326: not well-formed (invalid token)
+2026-04-28 08:22:06,862 [INFO]   Итого Релизы: 5 новостей
+2026-04-28 08:22:06,862 [INFO] 
+--- Категория: Обзоры ---
+2026-04-28 08:22:06,862 [INFO] Загружаю RSS: StopGame - Обзоры (https://rss.stopgame.ru/rss_review.xml)
+2026-04-28 08:22:07,772 [INFO]   → StopGame - Обзоры: получено 10 новостей
+2026-04-28 08:22:07,772 [INFO] Загружаю RSS: StopGame - Превью (https://rss.stopgame.ru/rss_preview.xml)
+2026-04-28 08:22:08,484 [INFO]   → StopGame - Превью: получено 10 новостей
+2026-04-28 08:22:08,484 [INFO]   Итого Обзоры: 5 новостей
+2026-04-28 08:22:08,485 [INFO] 
+==================================================
+2026-04-28 08:22:08,485 [INFO] ИТОГО: 10 подкастов собрано
+2026-04-28 08:22:08,485 [INFO] ==================================================
+2026-04-28 08:22:08,485 [INFO] Сохранено в /home/runner/work/GameNews/GameNews/podcasts.json
+2026-04-28 08:22:08,486 [INFO] Тексты для озвучки сохранены в /home/runner/work/GameNews/GameNews/texts/
+2026-04-28 08:22:08,486 [INFO] Готово!
