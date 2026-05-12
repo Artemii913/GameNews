@@ -2725,3 +2725,36 @@ Moved Temporarily
 2026-05-11 09:34:57,090 [INFO] Сохранено в /home/runner/work/GameNews/GameNews/podcasts.json
 2026-05-11 09:34:57,091 [INFO] Тексты для озвучки сохранены в /home/runner/work/GameNews/GameNews/texts/
 2026-05-11 09:34:57,091 [INFO] Готово!
+2026-05-12 08:35:53,509 [INFO] ==================================================
+2026-05-12 08:35:53,509 [INFO] GameNews RSS — Начало сбора новостей
+2026-05-12 08:35:53,509 [INFO] ==================================================
+2026-05-12 08:35:53,509 [INFO] 
+--- Категория: Турниры ---
+2026-05-12 08:35:53,509 [INFO] Загружаю RSS: Cyber.Sports.ru (https://cyber.sports.ru/rss/main.xml)
+2026-05-12 08:35:56,722 [WARNING] Ошибка парсинга Cyber.Sports.ru: HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+Moved Temporarily
+2026-05-12 08:35:56,722 [INFO] Загружаю RSS: GoHa.ru - Киберспорт (https://www.goha.ru/rss/:Киберспорт)
+2026-05-12 08:35:57,696 [INFO]   → GoHa.ru - Киберспорт: получено 10 новостей
+2026-05-12 08:35:57,697 [INFO]   Итого Турниры: 5 новостей
+2026-05-12 08:35:57,697 [INFO] 
+--- Категория: Релизы ---
+2026-05-12 08:35:57,697 [INFO] Загружаю RSS: StopGame - Новости (https://rss.stopgame.ru/rss_news.xml)
+2026-05-12 08:35:58,639 [INFO]   → StopGame - Новости: получено 10 новостей
+2026-05-12 08:35:58,639 [INFO] Загружаю RSS: GoHa.ru - Общее (https://www.goha.ru/rss/)
+2026-05-12 08:35:58,911 [WARNING] Ошибка парсинга GoHa.ru - Общее: <unknown>:207:2: mismatched tag
+2026-05-12 08:35:58,912 [INFO]   Итого Релизы: 5 новостей
+2026-05-12 08:35:58,912 [INFO] 
+--- Категория: Обзоры ---
+2026-05-12 08:35:58,912 [INFO] Загружаю RSS: StopGame - Обзоры (https://rss.stopgame.ru/rss_review.xml)
+2026-05-12 08:35:59,956 [INFO]   → StopGame - Обзоры: получено 10 новостей
+2026-05-12 08:35:59,956 [INFO] Загружаю RSS: StopGame - Превью (https://rss.stopgame.ru/rss_preview.xml)
+2026-05-12 08:36:00,974 [INFO]   → StopGame - Превью: получено 10 новостей
+2026-05-12 08:36:00,974 [INFO]   Итого Обзоры: 5 новостей
+2026-05-12 08:36:00,974 [INFO] 
+==================================================
+2026-05-12 08:36:00,974 [INFO] ИТОГО: 15 подкастов собрано
+2026-05-12 08:36:00,974 [INFO] ==================================================
+2026-05-12 08:36:00,975 [INFO] Сохранено в /home/runner/work/GameNews/GameNews/podcasts.json
+2026-05-12 08:36:00,976 [INFO] Тексты для озвучки сохранены в /home/runner/work/GameNews/GameNews/texts/
+2026-05-12 08:36:00,976 [INFO] Готово!
