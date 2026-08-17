@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
+    "title": "«Fresh Meat!» в реальной жизни: Пудж из Dota 2 заглянул в московский \"Перекресток\"",
+    "category": "Турниры",
+    "date": "2026-08-16",
+    "image": "https://www.goha.ru/s/E:NI/zQ/E50ah8gneC.jpg",
+    "audio": "audio/podcast_1.mp3",
+    "description": "15 августа посетители московского супермаркета «Перекрёсток» на улице Коломенская, д. 7, могли заметить необычную картину: у входа расположился огромный шестиметровый надувной Пудж, а внутри мясного отдела гостей встречал персонаж из Dota 2.Читать дальше →",
+    "source": "GoHa.ru - Киберспорт",
+    "link": "https://www.goha.ru/fresh-meat-v-realnoj-zhizni-pudzh-iz-dota-2-zaglyanul-v-moskovskij-perekrestok-lMonp5"
+  },
+  {
+    "id": 2,
     "title": "Virtus.pro выиграла турнир по PUBG на Esports World Cup 2026, хотя и проиграла финальный матч",
     "category": "Турниры",
     "date": "2026-07-27",
     "image": "https://www.goha.ru/s/E:CO/Sl/91xqXobtbv.jpg",
-    "audio": "audio/podcast_1.mp3",
+    "audio": "audio/podcast_2.mp3",
     "description": "Команда Virtus.pro победила на турнире по PUBG: Battlegrounds в рамках Esports World Cup 2026. Коллектив стабильно выступал все три дня гранд-финала и в итоге забрал 650 тысяч долларов призовых вместе с 1000 очками Club Championship.Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/virtuspro-vyigrala-turnir-po-pubg-na-esports-world-cup-2026-hotya-i-proigrala-finalnyj-match-lMonqL"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Глобальное влияние Ли Сан Хёка: Faker стал иконой киберспорта за пределами League of Legends",
     "category": "Турниры",
     "date": "2026-07-09",
     "image": "https://www.goha.ru/s/E:NG/fn/lB6fmw7O8C.jpg",
-    "audio": "audio/podcast_2.mp3",
+    "audio": "audio/podcast_3.mp3",
     "description": "Ли Сан Хёк, известный всему миру как Faker, прочно закрепил за собой статус ключевой фигуры не только в League of Legends, но и в глобальном спортивном пространстве. Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/globalnoe-vliyanie-li-san-hyoka-faker-stal-ikonoj-kibersporta-za-predelami-league-of-legends-xzBeDX"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Видимо, низко скакали: Федерация киберспорта соседней страны сошла с ума и забанила топовых киберспортсменов из-за их \"связи с Россией\"",
     "category": "Турниры",
     "date": "2026-06-27",
     "image": "https://www.goha.ru/s/E:BC/53/4jIoRP05C7.jpg",
-    "audio": "audio/podcast_3.mp3",
+    "audio": "audio/podcast_4.mp3",
     "description": "Федерация киберспорта Украины (UESF) официально опубликовала обновленный «черный список» игроков, которым запрещено участвовать в турнирах под эгидой или спонсорством организации. Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/vidimo-nizko-skakali-federaciya-kibersporta-ukrainy-soshla-s-uma-i-zabanila-topovyh-kibersportsmenov-iz-za-ih-svyazi-s-rossiej-dXR1MM"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Прощай, пустыня, привет, Лувр: Esports World Cup 2026 экстренно переезжает в Париж",
     "category": "Турниры",
     "date": "2026-05-21",
     "image": "https://www.goha.ru/s/E:Cr/Cy/jRBjWG9GAC.jpg",
-    "audio": "audio/podcast_4.mp3",
+    "audio": "audio/podcast_5.mp3",
     "description": "Киберспортивный кубок мира Esports World Cup 2026 меняет прописку. Этим летом, с 6 июля по 23 августа, грандиозный ивент впервые покинет Саудовскую Аравию и обоснуется в Париже. Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/proshhaj-pustynya-privet-luvr-esports-world-cup-2026-ekstrenno-pereezzhaet-v-parizh-dJ0XO2"
-  },
-  {
-    "id": 5,
-    "title": "Без шансов: Team Spirit стала чемпионом PGL Astana 2026 по CS2, Donk снова лучший",
-    "category": "Турниры",
-    "date": "2026-05-20",
-    "image": "https://www.goha.ru/s/E:Bh/Dn/Dsi6DGaknd.jpg",
-    "audio": "audio/podcast_5.mp3",
-    "description": "Российская киберспортивная команда Team Spirit стала триумфатором турнира PGL Astana 2026 по Counter-Strike 2, разгромив в гранд-финале состав Team Falcons со счетом 3:0. Читать дальше →",
-    "source": "GoHa.ru - Киберспорт",
-    "link": "https://www.goha.ru/bez-shansov-team-spirit-stala-chempionom-pgl-astana-2026-po-cs2-donk-snova-luchshij-dQY6qA"
   },
   {
     "id": 6,
@@ -111,57 +111,57 @@
   },
   {
     "id": 11,
+    "title": "ReStory: Chill Electronics Repairs: Обзор уютного симулятора мастерской",
+    "category": "Обзоры",
+    "date": "2026-08-16",
+    "image": "https://images.stopgame.ru/articles/2026/08/15/mS5yNoD.jpg",
+    "audio": "audio/podcast_11.mp3",
+    "description": "Когда узнаёшь о существовании ReStory, удивляешься тому, насколько мало существует игр с похожей задумкой. Из относительно популярных релизов можно вспомнить лишь Assemble with Care, где главная героиня тоже занимается ремонтом всякой всячины, но та игра очень короткая (меньше двух часов), да и повествование в ней важнее, нежели простенький геймплей. На ум ещё приходит PC Building Simulator, где мы занимаемся сборкой и обслуживанием компьютеров, но в ReStory компьютеров нет. Да и сборке здесь...",
+    "source": "StopGame - Обзоры",
+    "link": "https://stopgame.ru/show/163401/restory_chill_electronics_repairs_review_uyutnogo_simulyatora_masterskoy"
+  },
+  {
+    "id": 12,
     "title": "Kill The Shadow: Обзор китайской Disco Elysium",
     "category": "Обзоры",
     "date": "2026-08-13",
     "image": "https://images.stopgame.ru/articles/2026/08/11/ROrYpj5.jpg",
-    "audio": "audio/podcast_11.mp3",
+    "audio": "audio/podcast_12.mp3",
     "description": "Совсем недавно я наконец-то добралась до ZERO PARADES: For Dead Spies. Игра оказалась гораздо лучше, чем о ней писали пресса и игроки, поэтому вот уже месяц я медленно разбираюсь в тайнах, снюхиваю любой подозрительный порошок, покупаю розовые шубы и участвую в крутых шпионских делах. Неудивительно, что из всех августовских новинок мой взгляд зацепился именно за Kill the Shadow — демоверсия обещала детективную драму в лучших традициях студии ZA/UM, море интересных диалогов, волнующий экшн,...",
     "source": "StopGame - Обзоры",
     "link": "https://stopgame.ru/show/163187/kill_the_shadow_review_kitayskoy_disco_elysium"
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "Beast of Reincarnation: Обзор новой игры от авторов Pokémon",
     "category": "Обзоры",
     "date": "2026-08-12",
     "image": "https://images.stopgame.ru/articles/2026/08/11/fcDXKgWcj.jpg",
-    "audio": "audio/podcast_12.mp3",
+    "audio": "audio/podcast_13.mp3",
     "description": "Студия Game Freak известна прежде всего благодаря серии Pokémon, а её новая игра, Beast of Reincarnation, как уверяют разработчики, вещь совершенно другого порядка и жанра. Дескать, проект начался с желания создать игру с уникальной атмосферой, которую больше нигде не получишь. А идея возникла в рамках внутренней программы Gear Project, где сотрудники предлагают оригинальные концепции. Тем не менее игра напоминает смесь Sekiro: Shadows Die Twice и NieR: Automata, да и знакомые нотки «покемонов»...",
     "source": "StopGame - Обзоры",
     "link": "https://stopgame.ru/show/163198/beast_of_reincarnation_review_novoy_igry_ot_avtorov_pok_mon"
   },
   {
-    "id": 13,
+    "id": 14,
     "title": "The Life and Suffering of Prince Jerian: Обзор многострадальной нарративной RPG",
     "category": "Обзоры",
     "date": "2026-08-04",
     "image": "https://images.stopgame.ru/articles/2026/08/04/aWkTVFo.jpg",
-    "audio": "audio/podcast_13.mp3",
+    "audio": "audio/podcast_14.mp3",
     "description": "Как можно понять по названию, The Life and Suffering of Prince Jerian — это новая игра от создателей The Life and Suffering of Sir Brante. Её действие разворачивается не просто в той же Блаженной Аркнийской империи, но даже в тот же временной период. Наследный принц Джериан старше Бранте всего на два года, и возрастом различия между ними не ограничиваются. Даже если судить по титулу главного героя, очевидно, что нас ждёт совершенно иной взгляд на знакомый мир — не из социальных низов, а с самой...",
     "source": "StopGame - Обзоры",
     "link": "https://stopgame.ru/show/163123/the_life_and_suffering_of_prince_jerian_review_mnogostradalnoy_narrativnoy_rpg"
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "Scarlet Deer Inn: Обзор вышивной адвенчуры-платформера про Средневековье",
     "category": "Обзоры",
     "date": "2026-07-30",
     "image": "https://images.stopgame.ru/articles/2026/07/30/wFN-kbOjy.jpg",
-    "audio": "audio/podcast_14.mp3",
+    "audio": "audio/podcast_15.mp3",
     "description": "Супруги Навратиловы из крошечной чешской студии Attu Games знают толк в настоящем семейном подряде. Ева и Лукаш (Eva Navrátilová, Lukáš Navrátil) сделали адвенчуру про трактирщицу Элизу в средневековой Чехии полностью своими силами. Пара разделила хлопоты по созданию сценария и программированию. А пока жена вышивала на машинке модели персонажей для всей анимации в игре, муж записывал саундтрек в составе собственной фолк-рок-группы. Помимо уникального (и очень трудоёмкого) художественного...",
     "source": "StopGame - Обзоры",
     "link": "https://stopgame.ru/show/163027/scarlet_deer_inn_review_vyshivnoy_advenchury_platformera_pro_srednevekove"
-  },
-  {
-    "id": 15,
-    "title": "Halo: Campaign Evolved: Обзор красивого, но беззубого ремейка",
-    "category": "Обзоры",
-    "date": "2026-07-30",
-    "image": "https://images.stopgame.ru/articles/2026/07/29/nuKgLtd.jpg",
-    "audio": "audio/podcast_15.mp3",
-    "description": "Как бы ни старалась Halo Studios (с недавних пор так называется 343 Industries), новая Halo вряд ли когда-нибудь произведёт такой же фурор, как ранние части серии. Первую Halo до сих пор называют одним из важнейших релизов в истории индустрии — игра, получившая аж 97 баллов на Metacritic, была чуть ли не главным эксклюзивом Xbox. В 2001 году она не только впечатляла в техническом плане, но и сильно повлияла на будущее жанра и положила начало масштабной научно-фантастической вселенной, по...",
-    "source": "StopGame - Обзоры",
-    "link": "https://stopgame.ru/show/163005/halo_campaign_evolved_review_krasivogo_no_bezzubogo_remeyka"
   }
 ]
