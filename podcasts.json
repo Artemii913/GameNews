@@ -1,113 +1,113 @@
 [
   {
     "id": 1,
+    "title": "Никто никогда этого не допустит: популисты снова подняли вопрос о введении в наших школах уроков киберспорта",
+    "category": "Турниры",
+    "date": "2026-09-01",
+    "image": "https://www.goha.ru/s/E:BQ/81/DnGnTqFi6E.jpg",
+    "audio": "audio/podcast_1.mp3",
+    "description": "В рамках Восточного экономического форума президент Федерации компьютерного спорта России Дмитрий Смит сообщил о планах по внедрению уроков киберспорта в общеобразовательные школы страны.Читать дальше →",
+    "source": "GoHa.ru - Киберспорт",
+    "link": "https://www.goha.ru/nikto-nikogda-etogo-nedopustit-populisty-snova-podnyali-vopros-o-vvedenii-v-nashih-shkolah-urokov-kibersporta-xzB3Lk"
+  },
+  {
+    "id": 2,
     "title": "Team Spirit еще раз чемпионы: состав по CS 2 взял турнир Esports World Cup 2026, donk снова MVP",
     "category": "Турниры",
     "date": "2026-08-24",
     "image": "https://www.goha.ru/s/E:D5/oh/VNvTpAEkl4.jpg",
-    "audio": "audio/podcast_1.mp3",
+    "audio": "audio/podcast_2.mp3",
     "description": "Команда Team Spirit завершила триумфальное выступление на Esports World Cup 2026 по Counter-Strike 2, обыграв в гранд-финале в Париже дерзкий состав FUT Esports со счетом 3:1.Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/team-spirit-eshhe-raz-chempiony-sostav-po-cs-2-vzyal-turnir-esports-world-cup-2026-donk-snova-mvp-dN0Q5q"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "«Fresh Meat!» в реальной жизни: Пудж из Dota 2 заглянул в московский \"Перекресток\"",
     "category": "Турниры",
     "date": "2026-08-16",
     "image": "https://www.goha.ru/s/E:NI/zQ/E50ah8gneC.jpg",
-    "audio": "audio/podcast_2.mp3",
+    "audio": "audio/podcast_3.mp3",
     "description": "15 августа посетители московского супермаркета «Перекрёсток» на улице Коломенская, д. 7, могли заметить необычную картину: у входа расположился огромный шестиметровый надувной Пудж, а внутри мясного отдела гостей встречал персонаж из Dota 2.Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/fresh-meat-v-realnoj-zhizni-pudzh-iz-dota-2-zaglyanul-v-moskovskij-perekrestok-lMonp5"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Virtus.pro выиграла турнир по PUBG на Esports World Cup 2026, хотя и проиграла финальный матч",
     "category": "Турниры",
     "date": "2026-07-27",
     "image": "https://www.goha.ru/s/E:CO/Sl/91xqXobtbv.jpg",
-    "audio": "audio/podcast_3.mp3",
+    "audio": "audio/podcast_4.mp3",
     "description": "Команда Virtus.pro победила на турнире по PUBG: Battlegrounds в рамках Esports World Cup 2026. Коллектив стабильно выступал все три дня гранд-финала и в итоге забрал 650 тысяч долларов призовых вместе с 1000 очками Club Championship.Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/virtuspro-vyigrala-turnir-po-pubg-na-esports-world-cup-2026-hotya-i-proigrala-finalnyj-match-lMonqL"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Глобальное влияние Ли Сан Хёка: Faker стал иконой киберспорта за пределами League of Legends",
     "category": "Турниры",
     "date": "2026-07-09",
     "image": "https://www.goha.ru/s/E:NG/fn/lB6fmw7O8C.jpg",
-    "audio": "audio/podcast_4.mp3",
+    "audio": "audio/podcast_5.mp3",
     "description": "Ли Сан Хёк, известный всему миру как Faker, прочно закрепил за собой статус ключевой фигуры не только в League of Legends, но и в глобальном спортивном пространстве. Читать дальше →",
     "source": "GoHa.ru - Киберспорт",
     "link": "https://www.goha.ru/globalnoe-vliyanie-li-san-hyoka-faker-stal-ikonoj-kibersporta-za-predelami-league-of-legends-xzBeDX"
   },
   {
-    "id": 5,
-    "title": "Видимо, низко скакали: Федерация киберспорта соседней страны сошла с ума и забанила топовых киберспортсменов из-за их \"связи с Россией\"",
-    "category": "Турниры",
-    "date": "2026-06-27",
-    "image": "https://www.goha.ru/s/E:BC/53/4jIoRP05C7.jpg",
-    "audio": "audio/podcast_5.mp3",
-    "description": "Федерация киберспорта Украины (UESF) официально опубликовала обновленный «черный список» игроков, которым запрещено участвовать в турнирах под эгидой или спонсорством организации. Читать дальше →",
-    "source": "GoHa.ru - Киберспорт",
-    "link": "https://www.goha.ru/vidimo-nizko-skakali-federaciya-kibersporta-ukrainy-soshla-s-uma-i-zabanila-topovyh-kibersportsmenov-iz-za-ih-svyazi-s-rossiej-dXR1MM"
-  },
-  {
     "id": 6,
-    "title": "В финальном туре Tanks Blitz х RuStore команды сразятся за 42 млн рублей",
+    "title": "В сентябре Capcom устроит 40-минутную презентацию",
     "category": "Релизы",
     "date": "2026-09-01",
-    "image": "https://images.stopgame.ru/news/2026/08/31/O9lCIBe.jpg",
+    "image": "https://images.stopgame.ru/news/2026/09/02/1KuTDbMk.jpg",
     "audio": "audio/podcast_6.mp3",
-    "description": "Авторы Tanks Blitz объявили о скором начале финального этапа турнира Tanks Blitz x RuStore, в котором одна из шести команд завоюет звание чемпиона и призовой фонд в размере 42 миллионов рублей.… […]",
+    "description": "Capcom объявила, что перед выставкой Tokyo Game Show она проведёт 40-минутный эфир, посвящённый своим играм. Трансляция Capcom Spotlight начнётся 16 сентября в 17:00 МСК.… […]",
     "source": "StopGame - Новости",
-    "link": "https://stopgame.ru/newsdata/72697/v_finalnom_ture_tanks_blitz_h_rustore_komandy_srazyatsya_za_42_mln_rubley"
+    "link": "https://stopgame.ru/newsdata/72721/v_sentyabre_capcom_ustroit_40_minutnuyu_prezentaciyu"
   },
   {
     "id": 7,
-    "title": "Konami проведёт свою презентацию игр вечером 3 сентября",
+    "title": "Экс-продюсер DOOM: авторы DLC для The Dark Ages столкнулись с беспрецедентными кранчами",
     "category": "Релизы",
     "date": "2026-09-01",
-    "image": "https://images.stopgame.ru/news/2026/09/01/849hNhK.jpg",
+    "image": "https://images.stopgame.ru/news/2026/09/01/k8aL0laT.jpg",
     "audio": "audio/podcast_7.mp3",
-    "description": "Лето подошло к концу, а игровые презентации и не думают прекращаться. В этот раз сотрудники Konami объявили дату начала своего мероприятия Konami Press Start — 3 сентября в 18:00 по Москве.… […]",
+    "description": "Бывший продюсер id Software Эндрю Уиллис (Andrew Willis) стал гостем подкаста Kiwi Talkz. Помимо всего прочего, он рассказал, что дополнение Revelations для DOOM: The Dark Ages создавалось в авральном режиме. Специалиста цитирует сайт Insider Gaming.… […]",
     "source": "StopGame - Новости",
-    "link": "https://stopgame.ru/newsdata/72708/konami_provedet_svoyu_prezentaciyu_igr_vecherom_3_sentyabrya"
+    "link": "https://stopgame.ru/newsdata/72720/eks_prodyuser_doom_avtory_dlc_dlya_the_dark_ages_stolknulis_s_besprecedentnymi_kranchami"
   },
   {
     "id": 8,
-    "title": "DON'T NOD готовится к новому раунду сокращений",
+    "title": "Симулятор газонокосильщика Lawn Mowing Simulator 2 выйдет 23 сентября",
     "category": "Релизы",
     "date": "2026-09-01",
-    "image": "https://images.stopgame.ru/news/2026/09/01/wtDsGe_.jpg",
+    "image": "https://images.stopgame.ru/news/2026/09/01/aBuK0mdga.jpg",
     "audio": "audio/podcast_8.mp3",
-    "description": "Французская студия DON’T NOD продолжает свои попытки по улучшению финансового положения во избежание банкротства. Сегодня руководство компании объявило о предстоящих сокращениях.… […]",
+    "description": "Трейлер с анонсом даты релиза Lawn Mowing Simulator 2.… […]",
     "source": "StopGame - Новости",
-    "link": "https://stopgame.ru/newsdata/72707/dont_nod_gotovitsya_k_novomu_raundu_sokrascheniy"
+    "link": "https://stopgame.ru/newsdata/72719/simulyator_gazonokosilschika_lawn_mowing_simulator_2_vyydet_23_sentyabrya"
   },
   {
     "id": 9,
-    "title": "Rockstar выложила больше скриншотов GTA VI",
+    "title": "XBOX разрешила получать цифровые лицензии для снятых с продажи игр с дисков",
     "category": "Релизы",
     "date": "2026-09-01",
-    "image": "https://images.stopgame.ru/news/2026/09/01/yZJ_Wvjn.jpg",
+    "image": "https://images.stopgame.ru/news/2026/09/01/SaUn6ys6i.jpg",
     "audio": "audio/podcast_9.mp3",
-    "description": "[…]",
+    "description": "XBOX начала тестировать функцию переноса игр с дисков в цифровую библиотеку. Нововведение уже доступно участникам программы XBOX Insider, и игроки обнаружили интересную особенность: система работает даже с некоторыми играми, которые давно исчезли из цифрового магазина.… […]",
     "source": "StopGame - Новости",
-    "link": "https://stopgame.ru/newsdata/72706/rockstar_vylozhila_bolshe_skrinshotov_gta_vi"
+    "link": "https://stopgame.ru/newsdata/72718/xbox_razreshila_poluchat_cifrovye_licenzii_dlya_snyatyh_s_prodazhi_igr_s_diskov"
   },
   {
     "id": 10,
-    "title": "Naughty Dog завершила процесс захвата движений для Intergalactic: The Heretic Prophet",
+    "title": "Братская любовь и драка в бане в трейлере фильма по Street Fighter",
     "category": "Релизы",
-    "date": "2026-08-31",
-    "image": "https://images.stopgame.ru/news/2026/09/01/vPWbQu9Mv.jpg",
+    "date": "2026-09-01",
+    "image": "https://images.stopgame.ru/news/2026/09/01/EaTXcJv.jpg",
     "audio": "audio/podcast_10.mp3",
-    "description": "Ряд слухов и домыслов спустя разработчики из Naughty Dog наконец-то официально отозвались о производстве Intergalactic: The Heretic Prophet — нового научно-фантастического экшена, который анонсировали под конец 2024 года. Согласно свежему […]",
+    "description": "Legendary Pictures и Paramount Pictures подготовили свежий трейлер «Уличного бойца», основанного на файтингах серии Street Fighter. Помимо центральных героев ленты в лице Рю и Кена, в кадр попали практически все основные персонажи.… […]",
     "source": "StopGame - Новости",
-    "link": "https://stopgame.ru/newsdata/72705/naughty_dog_zavershila_process_zahvata_dvizheniy_dlya_intergalactic_the_heretic_prophet"
+    "link": "https://stopgame.ru/newsdata/72717/bratskaya_lyubov_i_draka_v_bane_v_trailere_filma_po_street_fighter"
   },
   {
     "id": 11,
